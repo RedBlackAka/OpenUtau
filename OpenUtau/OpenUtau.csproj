@@ -31,16 +31,22 @@
     <CFBundleDocumentTypes>
         <array>
             <dict>
-                <key>CFBundleTypeName</key>
-                <string>OpenUtau Sequence File</string>
                 <key>CFBundleTypeExtensions</key>
                 <array>
                     <string>ustx</string>
                 </array>
                 <key>CFBundleTypeIconFile</key>
                 <string>OpenUtau.icns</string>
+                <key>CFBundleTypeName</key>
+                <string>OpenUtau Sequence File</string>
+                <key>CFBundleTypeOSTypes</key>
+                <array>
+			        	    <string>????</string>
+		            </array>
                 <key>CFBundleTypeRole</key>
                 <string>Editor</string>
+                <key>LSIsAppleDefaultForType</key>
+		          	<true/>
                 <key>LSItemContentTypes</key>
                 <array>
                     <string>com.stakira.openutau.ustx</string>
@@ -48,6 +54,36 @@
             </dict>
         </array>          
   </CFBundleDocumentTypes>
+  <UTExportedTypeDeclarations>
+      <array>
+        <dict>
+		    	<key>UTTypeConformsTo</key>
+		    	<array>
+			    	<string>public.data</string>
+			    </array>
+          <key>UTTypeIdentifier</key>
+          <string>com.stakira.openutau.ustx</string>
+          <key>UTTypeDescription</key>
+          <string>OpenUtau Sequence File</string>
+          <key>UTTypeIcons</key>
+			    <dict>
+			    	<key>UTTypeIconName</key>
+			    	<string>OpenUtau Sequence File</string>
+			    	<key>UTTypeIconText</key>
+			    	<string>ustx</string>
+		    	</dict>
+          <key>UTTypeTagSpecification</key>
+          <dict>
+            <key>public.filename-extension</key>
+            <array>
+              <string>ustx</string>
+            </array>
+            <key>public.mime-type</key>
+            <string>application/ustx</string>
+          </dict>
+        </dict>
+      </array>
+    </UTExportedTypeDeclarations>
   </PropertyGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
