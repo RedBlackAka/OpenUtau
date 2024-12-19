@@ -38,6 +38,8 @@
     <StyleInclude Source="/Styles/Styles.axaml"/>
   </Application.Styles>
   <NativeMenu.Menu>
-    <NativeMenu/>
+    <NativeMenu>
+			<NativeMenuItem Header="About OpenUtau" Click="OnMenuCheckUpdate"/>
+		</NativeMenu>
   </NativeMenu.Menu>
 </Application>
