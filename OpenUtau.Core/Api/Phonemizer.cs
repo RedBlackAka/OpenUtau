@@ -19,7 +19,7 @@ namespace OpenUtau.Api {
         /// <param name="tag">Use IETF language code + phonetic type as tag, e.g., "EN ARPA", "JA VCV", etc. Required.</param>
         /// <param name="author">Author of this phonemizer.</param>
         /// <param name="language">IETF language code of this phonemizer's singing language, e.g., "EN", "JA"</param>
-        public PhonemizerAttribute(string name, string tag, string author = null, string language = null) {
+        public PhonemizerAttribute(string name, string tag, string? author = null, string? language = null) {
             Name = name;
             Tag = tag;
             Author = author;

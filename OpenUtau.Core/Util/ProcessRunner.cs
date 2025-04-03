@@ -7,7 +7,7 @@ using Serilog;
 namespace OpenUtau.Core.Util {
     public static class ProcessRunner {
         public static bool DebugSwitch { get; set; }
-        public static void Run(string file, string args, ILogger logger, string workDir = null, int timeoutMs = 60000) {
+        public static void Run(string file, string args, ILogger logger, string? workDir = null, int timeoutMs = 60000) {
             if (!File.Exists(file)) {
                 throw new FileNotFoundException($"Executable {file} not found.");
             }
