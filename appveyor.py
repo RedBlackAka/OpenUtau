@@ -73,7 +73,7 @@ elif sys.platform == 'darwin':
     os.system("npm install -g create-dmg")
     os.system("create-dmg bin/osx-x64/publish/OpenUtau.app")
     os.system("mv *.dmg OpenUtau-osx-x64.dmg")
-    os.system("codesign --force --deep --sign -fvs - OpenUtau-osx-x64.dmg")
+    os.system("codesign --deep -fs - OpenUtau-osx-x64.dmg")
     os.system("git checkout OpenUtau/OpenUtau.csproj")
     os.system("git checkout LICENSE.txt")
 
